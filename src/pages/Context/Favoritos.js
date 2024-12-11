@@ -28,7 +28,7 @@ export default function FavoritosProvider({children}){
                 }
 
                 nuevaLista = favorito.filter((item) =>item.id !== nuevoFavorito.id)
-                return setFavorito(nuevaLista)
+                return setFavorito(nuevaLista);
         }
         return { favorito, agregarFavorito};
     }

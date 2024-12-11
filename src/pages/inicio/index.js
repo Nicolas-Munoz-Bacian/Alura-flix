@@ -20,8 +20,6 @@ function inicio(){
                         return <Card {...videos} key={video.id}/>
                     })}
                 </section>
-                
-
         </>
 
     )
