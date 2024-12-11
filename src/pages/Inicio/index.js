@@ -16,20 +16,18 @@ function Inicio() {
         setVideos(data);
       });
   }, []);
-  return(
+  return (
     <>
-            <Banner img="./img/eliminar" color="#154580"/>
-            <Titulo>
-                <h1>Un lugar para guardar sus videos favoritos de Alura Latam</h1>
-            </Titulo>
-            <Card id="1" titulo="Equipo Front End" capa="https://youtu.be/rpvrLaBQwgg?si=UmyErXE1Xc_WYR0D"/>
-            
-            <section className={styles.container}>
-                {videos.map((video)=>{
-                    
-                    return <Card {...videos} key={video.id}/>
-                })}
-            </section>
+      <Banner img="home" color="#154580" />
+      <Titulo>
+        <h1>Un lugar para guardar sus videos favoritos </h1>
+      </Titulo>
+
+      <section className={styles.container}>
+        {videos.map((video) => {
+          return <Card {...video} key={video.id} />;
+        })}
+      </section>
     </>
   );
 }

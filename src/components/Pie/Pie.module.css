@@ -1,11 +1,16 @@
-.rodape {
+.pie {
+    background-color: var(--negro);
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: var(--preto);
+
 }
 
-.rodape h2 {
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--branco);
+.pie h2 {
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+h2 img {
+    width: 50px;
 }
