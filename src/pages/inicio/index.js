@@ -30,6 +30,22 @@ function Inicio() {
                     return <Card {...videos} key={video.id}/>
                 })}
             </section>
+            <Card id="2" titulo="Equipo Back End"/>
+            
+            <section className={styles.container}>
+                {videos.map((video)=>{
+                    
+                    return <Card {...videos} key={video.id}/>
+                })}
+            </section>
+            <Card id="3" titulo="Equipo Innovación y Gestión"/>
+            
+            <section className={styles.container}>
+                {videos.map((video)=>{
+                    
+                    return <Card {...videos} key={video.id}/>
+                })}
+            </section>
     </>
   );
 }
