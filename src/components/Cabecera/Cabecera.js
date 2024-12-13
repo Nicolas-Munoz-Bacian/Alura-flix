@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styles from "./cabecera.module.css"
+import styles from './cabecera.module.css'
 import logo from "./logo-Main.png"
 import CabeceraLink from "../CabeceraLink/Cabeceralink"
 
@@ -8,7 +8,7 @@ function Cabecera(){
         <header className={styles.Cabecera}>
         <Link to="/">
             <section className={styles.logoContainer}>
-                <img src={logo} alt="Logo ALuraflix"/> <span>ALuraflix</span>
+                <img src={logo} alt="Logo ALuraflix"/>
             </section>
         </Link>
         <nav>

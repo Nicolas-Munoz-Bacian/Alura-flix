@@ -11,11 +11,14 @@ a{text-decoration: none;}
 .logoContainer{
     height: 40px;
     display: flex;
+    padding: 18px;
     align-items: center;
+    justify-content: center;
 }
 
 .cabecera img {
     align-self: start;
+    padding: 10px;
 }
 
 .cabecera span {

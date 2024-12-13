@@ -21,6 +21,20 @@ console.log(video);
             frameborder="0" allow="accelerometer; autoplay; clipboard-write;"
             ></ifrmae>
         </section>
+        <section className={styles.container}>
+            <ifrmae width="360" height="315"
+            src="https://youtu.be/rpvrLaBQwgg?si=UmyErXE1Xc_WYR0D"
+            tittle="Grupo Back-End"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write;"
+            ></ifrmae>
+        </section>
+        <section className={styles.container}>
+            <ifrmae width="360" height="315"
+            src="https://youtu.be/rpvrLaBQwgg?si=UmyErXE1Xc_WYR0D"
+            tittle="Grupo Equipo Innovación y Gestión"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write;"
+            ></ifrmae>
+        </section>
         </>
     )
 }

@@ -1,5 +1,31 @@
 .container{
     display: flex;
     gap: 1rem;
-    height: 2rem;
+    justify-content: space-around;
+    padding: 1rem 7%;
+  }
+
+.card {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro de la tarjeta se alineen verticalmente */
+    align-items: center;    /* Alinea los elementos al centro horizontalmente */
+    max-width: 300px;       /* Establece un ancho máximo para cada tarjeta */
+    background-color: black; /* Fondo blanco para cada tarjeta */
+    border-radius: 8px;     /* Bordes redondeados */
+    overflow: hidden;       /* Asegura que el contenido no se desborde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar las tarjetas */
+}
+
+.capa {
+    width: 100%;
+    height: 276px;
+    object-fit: cover;      /* Asegura que la imagen cubra completamente el espacio sin distorsionarse */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
 }
