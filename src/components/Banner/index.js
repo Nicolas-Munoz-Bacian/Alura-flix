@@ -1,4 +1,4 @@
-import styles from"./Banner.module.css"
+import styles from"../../components/Banner/Banner.module.css"
 
 function Banner ({img, color}){
     return(

@@ -3,12 +3,11 @@ import { useFavoritosContext } from "../../pages/Context/Favoritos";
 import styles from "../../components/Card/Card.module.css";
 import iconFavorito from "../../components/Card/iconFavorito.png";
 import iconNoFavorito from "../../components/Card/iconNoFavorito.png";
-import EditModal from "../../pages/ModalEditarCard/modal"
+import Editmodal from "../../pages/ModalEditarCard/modal";
 
-function Card({ id, capa, titulo, descripcion, video }) {
+function Card({ id, capa, titulo, descripcion, video, onDelete }) {
     const { favorito, agregarFavorito } = useFavoritosContext();
     const [showModal, setShowModal] = useState(false);
-
     const isFavorito = favorito.some(fav => fav.id === id);
     const icon = isFavorito ? iconFavorito : iconNoFavorito;
 
@@ -17,7 +16,9 @@ function Card({ id, capa, titulo, descripcion, video }) {
     };
     
     const handleDelete = () => {
-        // Lógica para eliminar la tarjeta, puedes integrar aquí tu lógica de contexto o backend
+        if (onDelete) {
+            onDelete(id);
+        }
     };
 
     return (
@@ -37,8 +38,8 @@ function Card({ id, capa, titulo, descripcion, video }) {
                 Eliminar
             </button>
             {showModal && (
-                <EditModal
-                    initialData={{ id, titulo, descripcion, capa, video }}
+                <Editmodal
+                    initialData={{ id, titulo, capa, descripcion, video }}
                     onClose={() => setShowModal(false)}
                 />
             )}

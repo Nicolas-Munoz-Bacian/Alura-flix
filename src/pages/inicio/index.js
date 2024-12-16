@@ -1,9 +1,9 @@
 import Titulo from "../../components/Titulo";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
-import styles from "../../pages/inicio/index.modules.css"
-import banner from "../inicio/front end.png";
-import backend from "../inicio/back end.png";
+import styles from "../../pages/inicio/index.module.css";
+import banner from "../../pages/inicio/front end.png";
+import backend from "../../pages/inicio/back end.png";
 import innovacionYgestion from "../inicio/innovación y gestión.png";
 import { useState, useEffect } from "react";
 
